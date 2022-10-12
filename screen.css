@@ -1,20 +1,44 @@
 @font-face {
     font-family: "minecraft";
-    src: url("minecraft_font.ttf");
-}
-*{
-    font-family: minecraft;
+    src: url("minecraft.ttf");
 }
 body{
     background-color: rgba(0, 0, 0, 0.877);
+    font-family: minecraft;
+    margin: 1%;
 }
-
 nav{
-    display: grid;
+    position: fixed;
     width: 100%;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    
 }
-p{
-
+nav div{
+    display: grid;
+    grid-template-columns:25% 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1%;
+}
+#Portfolio{
+    
+    margin: 1fr;
+    font-size: 100%;
     text-align: center;
+    color: wheat;
+}
+.nav{
+    font-size: 100%;
+    text-align: center;
+    margin: 1fr;
+    text-decoration: none;
+    border-style:dotted ;
+    border-color: rgb(116, 87, 35);
+    color: wheat;
+}
+
+    
+header{
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-color: aliceblue;
 }
