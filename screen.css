@@ -3,18 +3,20 @@
     src: url("minecraft.ttf");
 }
 body{
-    background-color: rgba(0, 0, 0, 0.877);
+    background-color: rgb(31,31,31);
     font-family: minecraft;
     margin: 1%;
+    height: 100%;
 }
 nav{
     position: fixed;
-    width: 100%;
+    width: 98%;
+    background-color: rgb(31,31,31);
     
 }
 nav div{
     display: grid;
-    grid-template-columns:25% 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:25% repeat(6,1fr);
     gap: 1%;
 }
 #Portfolio{
@@ -33,12 +35,59 @@ nav div{
     border-color: rgb(116, 87, 35);
     color: wheat;
 }
-
-    
-header{
-    display: block;
+#Accueil{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(7, 2fr);
+}
+#Accueil h1{
+    grid-area: 4 / 4 / 7 / 6;
     text-align: center;
-    height: 100%;
-    width: 100%;
-    border-color: aliceblue;
+    color:rgb(94,67,44)
+}
+#Accueil p{
+    grid-area: 5 / 4 / 7 / 6;
+}
+.button {
+    grid-area: 6 / 3 / 7 / 6;
+    width: 40%;
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden; 
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 300ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
 }
