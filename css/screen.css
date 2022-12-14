@@ -1,6 +1,6 @@
 @font-face {
     font-family: "minecraft";
-    src: url("Minecraft.ttf");
+    src: url("../Minecraft.ttf");
 }
 body{
     background-color: rgb(31,31,31);
@@ -52,6 +52,9 @@ nav div{
     grid-area: 3 / 9 / 5 / 11;
     height: 100%;
     width: 70%;
+    border-style:dotted ;
+    border-color: rgb(116, 87, 35);
+
 }
 .button {
     grid-area: 4 / 5 / 4 / 7;

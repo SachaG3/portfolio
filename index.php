@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="../css/screen.css">
     <link href="minecraft.ttf">
     <title>Portfolio</title>
 </head>
 <body>
     <nav>
         <div>
-            <p id="Portfolio">Portfolio</p>
-            <a class="nav" href=""><p class="navT">Accueil</p></a>
-            <a class="nav" href=""><p class="navT">A propos</p></a>
-            <a class="nav" href=""><p class="navT">Competences</p></a>
-            <a class="nav" href=""><p class="navT">Formation</p></a>
-            <a class="nav" href=""><p class="navT">Experience</p></a>
-            <a class="nav" href=""><p class="navT">Contact</p></a>
+            <p id='Portfolio'>Porfolio</p>
+            <?php
+            include("php/menu.php")
+            ?>
         </div>
     </nav>
     <section id="Accueil">
-        <h1>SACHA GUIGNARD</h1>
+        <?php
+            include("php/info.php");
+            echo nomprenom();
+        ?>
         <a class="button" href="#popup1">Clique ici </a>
-        <img src="images.jpg">
+        <img src="../img/images.jpg">
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>Salut je suis un developpeur en devenir !!!</h2>
@@ -32,6 +32,7 @@
         </div>
     </section>
     <section id="A propos">
+    
     </section>
 </body>
 </html>
