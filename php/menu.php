@@ -3,6 +3,7 @@
     $menu=$data['menu'];
                                     // print_r($menu);
     foreach($menu AS $fichier=>$onglet){
-    echo '<a class="nav" href=""><p class="navT">'.$onglet.'</p></a></li>';
+    echo '<a class="nav "  href="#" onclick="choisDePage(\''.$fichier.'\')"><p class="navT">'.$onglet.'</p></a></li>';
+
     }
     ?>

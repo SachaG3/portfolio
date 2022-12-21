@@ -1,7 +1,7 @@
 menu:
-    Accueil: Accueil
-    Apropos: A propos
-    Competence: competence
+    accueil: Accueil
+    apropos: A propos
+    competence: competence
     formation: formation
-    Experience: Experience
-    Contact: Contact
+    experience: Experience
+    contact: Contact
