@@ -27,9 +27,9 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['sujet'], $_POST['message'])) {
     exit;
   }
   // Sinon, traite les données et envoie le mail
-  $headers = "From: expediteur@example.com\r\n";
+  $headers = "From: envoi@sachaguignard.fr\r\n";
   $headers .= "Reply-To: $nom <$email>\r\n";
-  $success = mail('destinataire@example.com', $sujet, $message, $headers);
+  $success = mail('contacts@sachaguignard.fr', $sujet, $message, $headers);
   if ($success) {
     // Le mail a été envoyé avec succès
     echo "Merci pour votre message ! Nous vous répondrons dès que possible.";
