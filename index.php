@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Sacha Guignard">
+    <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/A_propos.css">
     <link rel="stylesheet" href="css/Accueil.css">
+    <link rel="stylesheet" href="css/competence.css">
+    <link rel="stylesheet" href="css/experience.css">
     <link href="minecraft.ttf">
     <title>Portfolio</title>
 </head>
@@ -39,6 +42,7 @@
         <ul id="menu">      
             <li><a href="https://www.linkedin.com/in/sacha-guignard-a5b741232"> <img src="img/link.png" alt=""></a></li>
             <li><a href="https://github.com/SachaG3"> <img src="img/git.png" alt=""></a></li>
+            <li><a href="img/C.V.pdf" download><img src="img/cv.png" alt=""></a></li>
         </ul>
         <script>
         const menuBtn = document.getElementById('menuBtn');
@@ -72,10 +76,26 @@
             languagede coeur est python.
         </p>
     </section>
-    <section id="competence" class="pasAfficher"></section>
-    <section id="formation" class="pasAfficher"></section>
-    <section id="experience" class="pasAfficher"></section>
-    <section id="contact" class="pasAfficher"></section>
+
+    <section id="competence" class="pasAfficher">
+    <div id="grid">
+        <?php
+            include("php/competence.php")
+        ?>
+    </div>
+    </section>
+
+    <section id="formation" class="pasAfficher">
+
+    </section>
+
+    <section id="experience" class="pasAfficher">
+        <?php include("php/experience.php")?>
+    </section>
+
+    <section id="contact" class="pasAfficher">
+
+    </section>
     
 </body>
 </html>

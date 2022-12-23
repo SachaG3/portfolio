@@ -11,23 +11,5 @@
   <div class="g-recaptcha" data-sitekey="6LfVkJgjAAAAAMr9PmMvA8YMEOZxhQavI0Dba6_A"></div>
   <input type="submit" value="Envoyer">
 </form> 
-<?php
-if (isset($_POST['nom'], $_POST['email'], $_POST['sujet'], $_POST['message'])) {
-  // Validez les données du formulaire ici (par exemple, vérifiez que l'adresse email est valide)
-  $nom = $_POST['nom'];
-  $email = $_POST['email'];
-  $sujet = $_POST['sujet'];
-  $message = $_POST['message'];
-  $headers = "From: expediteur@example.com\r\n";
-  $headers .= "Reply-To: $nom <$email>\r\n";
-  $success = mail('destinataire@example.com', $sujet, $message, $headers);
-  if ($success) {
-    // Le mail a été envoyé avec succès
-    echo "Merci pour votre message ! Nous vous répondrons dès que possible.";
-  } else {
-    // Une erreur s'est produite lors de l'envoi du mail
-    echo "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.";
-  }
-}
-?>
+
 

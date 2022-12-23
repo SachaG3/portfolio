@@ -12,10 +12,13 @@ body{
     margin: 1%;
     height: 100%;
 }
+::-webkit-scrollbar {
+    display: none;
+    }
 nav{
     position:fixed;
     width: 98%;
-    background-color: rgb(31,31,31);
+    
     
 }
 nav div{
@@ -65,7 +68,7 @@ nav div{
 ul li a{
     text-decoration: none;
 }
-div ul img {
-    height: 5px;
-    width: 5px;
+#menu img {
+    height: 18px;
+    width: 18px;
 }
